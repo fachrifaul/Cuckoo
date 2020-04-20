@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   # s.prepare_command             = <<-CMD
   #                                   curl -Lo #{generator_name} https://github.com/Brightify/Cuckoo/releases/download/#{s.version}/#{generator_name}
   #                                   chmod +x #{generator_name}
-                                CMD
+                                # CMD
   s.frameworks                  = 'XCTest', 'Foundation'
   s.requires_arc                = true
   s.pod_target_xcconfig         = { 'ENABLE_BITCODE' => 'NO', 'SWIFT_REFLECTION_METADATA_LEVEL' => 'none' }
