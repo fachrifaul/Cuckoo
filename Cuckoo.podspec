@@ -23,9 +23,9 @@ Pod::Spec.new do |s|
   generator_name                = 'cuckoo_generator'
   s.swift_version               = '4.2'
   s.preserve_paths              = ['Generator/**/*', 'run', 'build_generator', generator_name]
-  s.prepare_command             = <<-CMD
-                                    curl -Lo #{generator_name} https://github.com/Brightify/Cuckoo/releases/download/#{s.version}/#{generator_name}
-                                    chmod +x #{generator_name}
+  # s.prepare_command             = <<-CMD
+  #                                   curl -Lo #{generator_name} https://github.com/Brightify/Cuckoo/releases/download/#{s.version}/#{generator_name}
+  #                                   chmod +x #{generator_name}
                                 CMD
   s.frameworks                  = 'XCTest', 'Foundation'
   s.requires_arc                = true
